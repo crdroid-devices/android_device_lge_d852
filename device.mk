@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
 # NFC packages
 PRODUCT_PACKAGES += \
     NfcNci \
-    nfc_nci.pn54x.default
+    nfc_nci.msm8974
 
 PRODUCT_COPY_FILES += \
     device/lge/g3-common/wcnss/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
