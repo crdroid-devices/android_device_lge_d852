@@ -19,8 +19,8 @@ $(call inherit-product-if-exists, vendor/lge/d852/d852-vendor.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
-    device/lge/g3-common/configs/audio/audio_platform_info_qcwcn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    device/lge/g3-common/configs/audio/mixer_paths_qcwcn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
+    device/lge/g3-common/configs/audio/audio_platform_info_qcwcn.xml:system/vendor/etc/audio_platform_info.xml \
+    device/lge/g3-common/configs/audio/mixer_paths_qcwcn.xml:system/vendor/etc/mixer_paths.xml
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -51,11 +51,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g3-common/proprietary/vendor/lib/hw/nfc_nci.msm8974.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/nfc_nci.msm8974.so
 
 PRODUCT_COPY_FILES += \
-    device/lge/g3-common/wcnss/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_cfg.dat \
-    device/lge/g3-common/wcnss/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
-    device/lge/g3-common/wcnss/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    device/lge/g3-common/wcnss/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    device/lge/g3-common/wcnss/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    device/lge/g3-common/wcnss/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
+    device/lge/g3-common/wcnss/WCNSS_qcom_cfg.ini:system/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
+    device/lge/g3-common/wcnss/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    device/lge/g3-common/wcnss/p2p_supplicant_overlay.conf:system/vendor/etc/wifi/p2p_supplicant_overlay.conf \
+    device/lge/g3-common/wcnss/wpa_supplicant_overlay.conf:system/vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # common g3
 $(call inherit-product, device/lge/g3-common/g3.mk)
